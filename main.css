@@ -1,0 +1,370 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*::-webkit-scrollbar {
+    width: 0;
+}
+#yakor {
+    position: absolute;
+    top: 0px;
+}
+#mm {
+    opacity: 0;
+    position: fixed;
+    height: 100vh;
+    width: 100vw !important;
+    top: 0px;
+    left: 0px;
+    display: none;
+    z-index: -100;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row;
+    flex-flow: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: white;
+    padding-bottom: 10vh;
+}
+#mm li {
+    display: none;
+    font-size: 6vmax;
+    line-height: 7vmax;
+    height: 7vmax;
+    width: 100vw;
+    padding: 5vh 35vw;
+}
+nav img {
+    max-width: 10vh;
+}
+body {
+    width: 100vw;
+    padding-left: 10vh; 
+    background: url(pic/b2.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-clip: border-box;
+}
+nav#left {
+    width: 10vh;
+    height: 100vh;
+    position: fixed;
+    overflow: hidden;
+    background: white;
+    left: 0px;
+    top: 0px;
+}
+nav#left ul {
+    height: 100vh;
+}
+nav#left li {
+    display: block;
+    width: 10vh;
+    padding: 2vh;
+}
+nav#left #logo a img {
+    width: 6vh;
+    padding: 0.5vh;
+}
+#navt {
+    position: absolute;
+    top: 40vh !important;
+}
+nav#left h4 {
+    text-align: center;
+    display: block;
+    font-size: 2.5vh;
+    line-height: 3vh;
+}
+nav#left a img.arrow {
+    width: 3vh;
+    height: 3vh;
+    display: block;
+    margin: auto;
+}
+li#copyco {
+    position: absolute !important;
+    bottom: 0;
+}
+nav#left p#copy {
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+    white-space: nowrap;
+    height: auto;
+    padding-left: 2vh;
+}
+nav#navig {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    height: 10vh;
+    top: 0px;
+    width: 95.12vw;
+    padding: 0px 7vw 0px 15vw;
+    background-clip: border-box;
+    z-index: 9999;
+}
+.scrolled {
+    background-color: rgb(255,255,255);
+}
+.scrolledp {
+    background-color: rgba(255,255,255,0.8);
+}
+#navig > ul {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    margin: auto;
+    height: 10vh;
+    z-index: 1;
+}
+#navig ul * {
+    display: inline-block;
+    vertical-align: top;
+    max-height: 10vh
+}
+#navig ul>li {
+    line-height: 10vh;
+}
+#navig ul:last-child {
+    z-index: 998;
+}
+#navig > ul #links {
+    width: 60vw;
+}
+#links a {
+    padding: 0px 1vw;
+    font-size: 2.5vh;
+}
+#rightm {
+    position: absolute;
+    right: 7vw;
+    z-index: 999;
+    height: 10vh;
+}
+#rightm img {
+    height: 10vh;
+    line-height: 10vh;
+    vertical-align: middle;
+    z-index: 1100 !important;
+    cursor: pointer;
+}
+#menu {
+    display: none !important;
+}
+#social {
+    position: absolute;
+    right: 7vw;
+    height: 43vh;
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr;
+    top: 28vh;
+    z-index: 900 !important;
+}
+#rightm img, #social img {
+    width: 6vh;
+    height: 6vh;
+}
+#social img {
+    margin: auto;
+    display: block;
+}
+#social h3 {
+    width: 0px;
+    overflow: hidden;
+    font-size: 3.5vmin;
+    line-height: 6vmin;
+}
+main > div:not(#intro) {
+    padding: 2.5vh 7vw 2.5vh 15vw;
+    background-color: #fff;
+}
+main div#intro {
+    margin: 10vh 15vw 10vh 15vw;
+    height: 80vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    z-index: 10 !important;
+}
+main div#intro h1 {
+    font-size: 6vmin;
+}
+#intro a {
+    position: absolute;
+    bottom: 21vh;
+    font-size: 3vmin;
+}
+main div#intro a img {
+    width: 3vh;
+    vertical-align: middle;
+}
+main div#about {
+    padding-top: 10vh;
+    padding-bottom: 0;
+}
+#about img {
+    display: block;
+    max-width: 15%;
+    margin: auto;
+    float: left;
+    padding-right: 1vw;
+}
+#photo {
+    padding-top: 10vh !important;
+}
+.grid:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.grid-sizer,
+.grid-item {
+    width: 33.3333333%;
+}
+.grid-item {
+    float: right;
+}
+.grid-item img {
+    display: block;
+    max-width: 100%;
+}
+#articles {
+    padding-top: 10vh !important;
+}
+article img {
+    display: block;
+    max-width: 75%;
+    margin: auto;
+    padding: 2.5vh 0;
+}
+main  h2 {
+    font-size: 5vmin;
+    padding-bottom: 1vh;
+}
+#gototop {
+    width: 2.5vmax;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    margin-right: 40vw
+}
+p {
+    text-align: justify;
+    font-size: 3vmin;
+}
+@media screen and (orientation: portrait) {
+    body {
+        padding-left: 7.5vh;
+    }
+    #mm {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    #left {
+        width: 7.5vh !important;
+    }
+    nav#left li {
+        width: 7.5vh !important;
+        padding: 1.5vh !important;
+    }
+    nav#left #logo a img {
+        width: 4.5vh !important;
+        padding: 0px !important;
+    }
+    nav#navig {
+        height: 7vh;
+        width: 92.5vw;
+    }
+    nav#navig > ul {
+        height: 7vh;
+    }
+    #navig > ul * {
+        max-height: 7vh;
+    }
+    #navig ul>li {
+        line-height: 7vh;
+    }
+    #rightm {
+        height: 7vh;
+    }
+    .scrolled #rightm {
+        margin-right: 3vh !important;
+    } 
+    #social h3 {
+        font-size: 3.5vmax;
+    }
+    #links a {
+        font-size: 3.5vmax;
+    }
+    #navig  ul #links {
+        display: none;
+    }
+    .showenl {
+        opacity: 100 !important;
+        z-index: 1000 !important;
+    }
+    .showenl li {
+        display: block !important;
+    }
+    #navt h4 {
+        font-size: 3.5vh;
+    }
+    #menu{
+        display: inline !important;
+    }
+    main > div:not(#intro) {
+        padding-right: 15vw;
+        padding-left: 5vw;
+    }
+    #intro {
+        margin-right: 10vh !important;
+    }
+    #intro a {
+        font-size: 3vmax;
+    }
+    #about > img {
+        max-width: 50%;
+        margin: 0 25%;
+    }
+    .grid-sizer, .grid-item {
+        width: 100%;
+    }
+    article img {
+        max-width: 100%;
+    }
+    p {
+        font-size: 3vmax;
+    }
+    #gototop {
+        margin-right: auto;
+        width: 5vmax
+    }
+}
