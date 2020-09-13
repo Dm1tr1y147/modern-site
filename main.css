@@ -235,6 +235,11 @@ main div#about {
     margin: auto;
     float: left;
     padding-right: 1vw;
+    padding-bottom: 5vh;
+}
+#about h2 {
+    text-align: center;
+    padding-bottom: 5vh;
 }
 #photo {
     padding-top: 10vh !important;
@@ -264,8 +269,8 @@ article img {
     margin: auto;
     padding: 2.5vh 0;
 }
-main  h2 {
-    font-size: 5vmin;
+main h2 {
+    font-size: 5vh;
     padding-bottom: 1vh;
 }
 #gototop {
